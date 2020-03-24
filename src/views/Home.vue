@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    当前用户登录名{{$store.state.username}}
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+// import {getUser} from '../api/user.js';
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  // async mounted(){
+  //   // alert(1);
+  //   // let res = await getUser();
+  //   console.log(await getUser());
+  // }
 }
 </script>
