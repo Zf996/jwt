@@ -10,6 +10,8 @@ export default new Vuex.Store({
     isShowLoading:false,
     username: 'xxx'
   },
+  // 用来获得state里面的数据的
+  getters:{},
   mutations: {//commit
     // mutations里面方法的参数都是state
     showLoading(state){

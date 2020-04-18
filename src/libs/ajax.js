@@ -40,7 +40,7 @@ class Ajax {
             return res.data;
         })
     }
-    request(options) { //外部传递过来的 url,method参数
+    request(options) { //外部传递过来的 url,method、data数据参数等...
         let instance = axios.create(); //通过axios库创建一个axios实例
         this.setInterceptor(instance, options.url);
         let config = this.merge(options);
